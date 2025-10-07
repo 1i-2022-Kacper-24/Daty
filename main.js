@@ -8,7 +8,7 @@ function showLocalizedDateExamples() {
     };
 
     const localized = `
-        🌍 Przykładowa data (20 grudnia 2012):<br>
+        Przykładowa data (20 grudnia 2012):<br>
         en-US: ${date.toLocaleDateString("en-US", options)}<br>
         ko-KR: ${date.toLocaleDateString("ko-KR", options)}<br>
         ar-EG: ${date.toLocaleDateString("ar-EG", options)}<br>
@@ -30,8 +30,8 @@ function getDateFromForm() {
     const valueOfDate = selectedDate.valueOf();
 
     document.getElementById("output").innerHTML = `
-        📅 Wybrana data: ${inputValue}<br>
-        🔢 ValueOf: ${valueOfDate}
+        Wybrana data: ${inputValue}<br>
+        ValueOf: ${valueOfDate}
     `;
 }
 
@@ -53,23 +53,23 @@ function calculateDateDifference() {
 
     if (diffInDays < 0){
         document.getElementById("output").innerHTML = `
-        📆 Data pierwsza: ${start}<br>
-        📆 Data  druga: ${end}<br>
-        📏 Upłynęło: ${diffInDays * -1} dni! <br>
+        Data pierwsza: ${start}<br>
+        Data  druga: ${end}<br>
+        Upłynęło: ${diffInDays * -1} dni! <br>
     `;
     }
     else if(diffInDays > 0){
         document.getElementById("output").innerHTML = `
-        📆 Data pierwsza: ${start}<br>
-        📆 Data  druga: ${end}<br>
-        📏 Pozostało: ${diffInDays} dni! <br>
+        Data pierwsza: ${start}<br>
+        Data  druga: ${end}<br>
+        Pozostało: ${diffInDays} dni! <br>
         `;
     }
     else{
         document.getElementById("output").innerHTML = `
-        📆 Data pierwsza: ${start}<br>
-        📆 Data  druga: ${end}<br>
-        📏 To ten sam dzień! <br>
+        Data pierwsza: ${start}<br>
+        Data  druga: ${end}<br>
+        To ten sam dzień! <br>
     `;
     }
 
