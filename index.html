@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="Date-Value-Of">
+    <form>
+        <p>Wybierz datę:</p>
+        <input type="date" id="dateInput"><br><br>
+        <button type="button" onclick="getDateFromForm()">Pobierz datę</button>
+    </form><br><br>
+    </div>
+
+    <div class="Date-Locale-String">
+    <button type="button" onclick="showLocalizedDateExamples()">Pokaż przykładowe daty</button><br><br>
+    </div>
+
+    <div class="Dates-Diff">
+    <form id="dateDiffForm">
+    <p>Podaj dwie daty:</p>
+    <label for="startDate">Data pierwsza:</label><br>
+    <input type="date" id="startDate"><br><br>
+
+    <label for="endDate">Data druga:</label><br>
+    <input type="date" id="endDate"><br><br>
+
+    <button type="button" onclick="calculateDateDifference()">Oblicz różnicę</button>
+    </form><br><br>
+    </div>
+
+
+    <p style="width: 90%;"> Wyniki:</p>
+    <div id="output"></div>
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
